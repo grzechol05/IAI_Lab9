@@ -19,9 +19,9 @@ class Complex {
         return new Complex(a, b);
     }
 
-    //getMod(): number {
-       // return //wyliczmy tu moduł
-    //}
+    getMod(): number {
+        return Math.sqrt((Math.pow(this.re,2))+(Math.pow(this.im,2)));
+    }
 
     toString() {
         console.log("re: ", this.re, ", ", "im: ", this.im);

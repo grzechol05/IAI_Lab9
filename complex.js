@@ -1,4 +1,3 @@
-"use strict";
 var Complex = /** @class */ (function () {
     function Complex(re, im) {
         this.re = re;
@@ -14,9 +13,9 @@ var Complex = /** @class */ (function () {
         var b = this.im - com.im;
         return new Complex(a, b);
     };
-    //getMod(): number {
-    // return //wyliczmy tu moduł
-    //}
+    Complex.prototype.getMod = function () {
+        return Math.sqrt((Math.pow(this.re, 2)) + (Math.pow(this.im, 2)));
+    };
     Complex.prototype.toString = function () {
         console.log("re: ", this.re, ", ", "im: ", this.im);
     };
