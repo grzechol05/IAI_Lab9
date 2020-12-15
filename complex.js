@@ -19,6 +19,9 @@ var Complex = /** @class */ (function () {
     Complex.prototype.toString = function () {
         console.log("re: ", this.re, ", ", "im: ", this.im);
     };
+    Complex.prototype.addresult = function () {
+        console.log("suma:", c);
+    };
     return Complex;
 }());
 var a = new Complex(3, 4);
@@ -27,3 +30,4 @@ var c = a.add(b);
 var d = new Complex(3, -2);
 var e = c.subtract(d);
 e.toString();
+e.addresult();

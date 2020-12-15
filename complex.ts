@@ -26,6 +26,11 @@ class Complex {
     toString() {
         console.log("re: ", this.re, ", ", "im: ", this.im);
     }
+
+    addresult() {
+        console.log("suma:",c);
+    }
+
 }
 
 let a = new Complex(3, 4);
@@ -37,3 +42,4 @@ let d = new Complex(3, -2);
 let e = c.subtract(d);
 
 e.toString();
+e.addresult();
