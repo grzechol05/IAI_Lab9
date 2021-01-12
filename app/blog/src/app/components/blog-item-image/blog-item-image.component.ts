@@ -13,5 +13,4 @@ export class BlogItemImageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
